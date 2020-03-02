@@ -6,6 +6,7 @@ import { ServerComponent } from './server/server.component';
 import { SecondServerComponent } from './second-server/second-server.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
+import{FormsModule} from '@angular/forms';
 
 
 @NgModule({
