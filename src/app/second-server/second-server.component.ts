@@ -18,7 +18,7 @@ serverName:string ="A1_HF server";
   ngOnInit() {
   }
   onCreateServer(){
-    this.serverCreationStatus="server created";
+    this.serverCreationStatus="server created with the server Name :"+this.serverName;
   }
   onUpdateServerName(event: Event ){
     this.serverName=(<HTMLInputElement>event.target).value;
