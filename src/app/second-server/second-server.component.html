@@ -15,3 +15,14 @@
 </button>
 <!-- <p [innerText]="allowNewServer"></p> -->
 <p>{{ serverCreationStatus }}</p>
+
+
+
+<h1>Assingment </h1>
+<input type="text"
+class="form-control"
+[(ngModel)]="username">
+
+<button class="btn-btn-primary"  [disabled]="username ==='' "
+(click)="username = ''" >Reset user</button>
+<p>{{username}}</p>

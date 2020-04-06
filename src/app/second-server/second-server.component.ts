@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class SecondServerComponent implements OnInit {
 allowNewServer:boolean=false;
 serverCreationStatus:string ="No server created"; 
-serverName:string ="A1_HF server";
+serverName:string ="INITIAL server";
+
+
+username:string="";
+
   constructor() {
     setTimeout(() => {
       this.allowNewServer=true;
@@ -23,5 +27,5 @@ serverName:string ="A1_HF server";
   onUpdateServerName(event: Event ){
     this.serverName=(<HTMLInputElement>event.target).value;
   }
-
+  
 }
