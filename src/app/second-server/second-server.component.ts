@@ -10,6 +10,7 @@ allowNewServer:boolean=false;
 serverCreationStatus:string ="No server created"; 
 serverName:string ="INITIAL server";
 serverStatus:boolean = false;
+servers=["test server 1"];
 
 
 username:string="";
@@ -24,6 +25,7 @@ username:string="";
   }
   onCreateServer(){
     this.serverStatus=true;
+    this.servers.push(this.serverName);
     this.serverCreationStatus="server created with the server Name :"+this.serverName;
   }
   onUpdateServerName(event: Event ){

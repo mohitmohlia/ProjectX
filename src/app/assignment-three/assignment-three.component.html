@@ -1,0 +1,14 @@
+<p>assignment-three works!</p>
+
+<!-- <button class="btn-btn-primary" (click)="showSecret=!showSecret" >hello there</button> -->
+
+<button class="btn-btn-primary" (click)="onToggleButton()" >hello there</button>
+<p *ngIf="showSecret">
+    Secret password=tuna jim halpert
+</p>
+<div *ngFor="let logitem of log ; let i =index"
+[ngStyle]="{backgroundColor: i>=4?'blue':'transparent'}"
+[ngClass]="{'whitetext':i >=5}"
+>
+{{logitem}}
+</div>
