@@ -9,6 +9,7 @@ export class SecondServerComponent implements OnInit {
 allowNewServer:boolean=false;
 serverCreationStatus:string ="No server created"; 
 serverName:string ="INITIAL server";
+serverStatus:boolean = false;
 
 
 username:string="";
@@ -22,6 +23,7 @@ username:string="";
   ngOnInit() {
   }
   onCreateServer(){
+    this.serverStatus=true;
     this.serverCreationStatus="server created with the server Name :"+this.serverName;
   }
   onUpdateServerName(event: Event ){
